@@ -1,0 +1,7 @@
+C:\GrandCircus\Documents\Lab exercises\lab7\lab7\bin\Debug\lab7.exe.config
+C:\GrandCircus\Documents\Lab exercises\lab7\lab7\bin\Debug\lab7.exe
+C:\GrandCircus\Documents\Lab exercises\lab7\lab7\bin\Debug\lab7.pdb
+C:\GrandCircus\Documents\Lab exercises\lab7\lab7\obj\Debug\lab7.csprojAssemblyReference.cache
+C:\GrandCircus\Documents\Lab exercises\lab7\lab7\obj\Debug\lab7.csproj.CoreCompileInputs.cache
+C:\GrandCircus\Documents\Lab exercises\lab7\lab7\obj\Debug\lab7.exe
+C:\GrandCircus\Documents\Lab exercises\lab7\lab7\obj\Debug\lab7.pdb
