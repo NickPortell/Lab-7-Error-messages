@@ -5,3 +5,10 @@ C:\GrandCircus\Documents\Lab exercises\lab7\lab7\obj\Debug\lab7.csprojAssemblyRe
 C:\GrandCircus\Documents\Lab exercises\lab7\lab7\obj\Debug\lab7.csproj.CoreCompileInputs.cache
 C:\GrandCircus\Documents\Lab exercises\lab7\lab7\obj\Debug\lab7.exe
 C:\GrandCircus\Documents\Lab exercises\lab7\lab7\obj\Debug\lab7.pdb
+F:\GrandCircus\Documents\Labs\Lab-7-Error-messages\lab7\bin\Debug\lab7.exe.config
+F:\GrandCircus\Documents\Labs\Lab-7-Error-messages\lab7\bin\Debug\lab7.exe
+F:\GrandCircus\Documents\Labs\Lab-7-Error-messages\lab7\bin\Debug\lab7.pdb
+F:\GrandCircus\Documents\Labs\Lab-7-Error-messages\lab7\obj\Debug\lab7.csprojAssemblyReference.cache
+F:\GrandCircus\Documents\Labs\Lab-7-Error-messages\lab7\obj\Debug\lab7.csproj.CoreCompileInputs.cache
+F:\GrandCircus\Documents\Labs\Lab-7-Error-messages\lab7\obj\Debug\lab7.exe
+F:\GrandCircus\Documents\Labs\Lab-7-Error-messages\lab7\obj\Debug\lab7.pdb

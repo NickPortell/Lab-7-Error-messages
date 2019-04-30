@@ -41,16 +41,49 @@ namespace lab7
             }
             catch (Exception notName)
             {
-                Console.WriteLine(notName.Message);
+                Console.WriteLine(notName.Message + "\n");
             }
-            //catch ()
-            //{
 
-            //}
-            //catch ()
-            //{
 
-            //}
+            try
+            {
+                Console.Write("Please enter a valid Email: ");
+                Console.WriteLine(GetEmail());
+            }
+            catch (Exception notEmail)
+            {
+                Console.WriteLine(notEmail.Message + "\n");
+            }
+
+            try
+            {
+                Console.Write("Please enter a valid Phone (###-###-####): ");
+                Console.WriteLine(GetPhone());
+            }
+            catch (Exception notPhone)
+            {
+                Console.WriteLine(notPhone.Message + "\n");
+            }
+
+            try
+            {
+                Console.Write("Please enter a valid Date (dd/mm/yyyy): ");
+                Console.WriteLine(GetDate());
+            }
+            catch(Exception notDate)
+            {
+                Console.WriteLine(notDate.Message +"\n");
+            }
+
+            try
+            {
+                Console.Write("Please enter a valid HTML expression: ");
+                Console.WriteLine(GetHTML());
+            }
+            catch (Exception notHTML)
+            {
+                Console.WriteLine(notHTML.Message + "\n");
+            }
 
         }
         // METHOD SPACE //
@@ -78,85 +111,85 @@ namespace lab7
             {
                 throw new Exception("Sorry, name is not valid!");
             }
-            return userInput;
+            return "Your input: " + userInput + "\n";
         }
 
 
         public static string GetEmail() //NO Special characters {._-} etc.
         {
             string userInput;
-            bool regexName;
+            bool regexEmail;
 
             userInput = Console.ReadLine(); // {(5-30) alphanumerics} @ {(5-10) alphanumerics} . {(2-3) alphanumerics}
-            regexName = Regex.IsMatch(userInput, @"([0-9a-zA-Z]{5,30})+(@)([0-9a-zA-Z]{5,10})(\.)([0-9a-zA-Z]){2,3}");
+            regexEmail = Regex.IsMatch(userInput, @"([0-9a-zA-Z]{5,30})+(@)([0-9a-zA-Z]{5,10})(\.)([0-9a-zA-Z]){2,3}");
 
-            if (regexName)
-            {
-                throw new Exception("Sorry, email is not valid!");
-            }
-            else
+            if (regexEmail)
             {
                 Console.WriteLine("Email is valid!");
             }
-            return userInput;
+            else
+            {
+                throw new Exception("Sorry, email is not valid!");
+            }
+            return "Your input: " + userInput + "\n";
         }
 
 
         public static string GetPhone()
         {
             string userInput;
-            bool regexName;
+            bool regexPhone;
 
             userInput = Console.ReadLine();
-            regexName = Regex.IsMatch(userInput, "");
+            regexPhone = Regex.IsMatch(userInput, "([0-9]{3})(-)([0-9]{3})(-)([0-9]){4}");
 
-            if (regexName)
-            {
-                throw new Exception("Sorry, phone is not valid!");
-            }
-            else
+            if (regexPhone)
             {
                 Console.WriteLine("Phone is valid!");
             }
-            return userInput;
+            else
+            {
+                throw new Exception("Sorry, phone is not valid!");
+            }
+            return "Your input: " + userInput + "\n";
         }
 
         public static string GetDate()
         {
             string userInput;
-            bool regexName;
+            bool regexDate;
 
             userInput = Console.ReadLine();
-            regexName = Regex.IsMatch(userInput, "");
+            regexDate = Regex.IsMatch(userInput, "([0-3]{1})([0-9]{1})(/)([0-1]{1})([0-9]{1})(/)([0-9]){4}");
 
-            if (regexName)
-            {
-                throw new Exception("Sorry, date is not valid!");
-            }
-            else
+            if (regexDate)
             {
                 Console.WriteLine("Date is Valid!");
             }
-            return userInput;
+            else
+            {
+                throw new Exception("Sorry, date is not valid!");
+            }
+            return "Your input: " + userInput + "\n";
         }
 
         public static string GetHTML()
         {
             string userInput;
-            bool regexName;
+            bool regexHTML;
 
             userInput = Console.ReadLine();
-            regexName = Regex.IsMatch(userInput, "");
+            regexHTML = Regex.IsMatch(userInput, @"<\s*([a-zA-Z]+)[^>]*>(.*?)<\s*/\s*([a-zA-Z]+)>");
 
-            if (regexName)
+            if (regexHTML)
             {
-                throw new Exception("Sorry, HTML is not valid!");
+                Console.WriteLine("HTML expression is valid!");
             }
             else
             {
-                Console.WriteLine("HTML is valid!");
+                throw new Exception("Sorry, HTML expression not valid!");
             }
-            return userInput;
+            return "Your input: " + userInput + "\n";
         }
 
     }
